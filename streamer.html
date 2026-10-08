@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clopePlay — Painel do Streamer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="dashboard">
+    <header class="dash-head">
+      <div class="brand"><span class="logo">CP</span><span>clopePlay</span></div>
+      <a class="ghost-link" href="index.html">Página pública ↗</a>
+    </header>
+
+    <section class="dash-title">
+      <div>
+        <div class="eyebrow">PAINEL DO STREAMER</div>
+        <h1>Mensagens da sua live</h1>
+        <p>Receba, modere e leia as mensagens em voz alta.</p>
+      </div>
+      <button id="clearBtn" class="danger">Limpar mensagens</button>
+    </section>
+
+    <section class="stats">
+      <div class="stat"><strong id="total">0</strong><span>mensagens</span></div>
+      <div class="stat"><strong id="pending">0</strong><span>pendentes</span></div>
+      <div class="stat"><strong id="voiceStatus">Pronto</strong><span>voz</span></div>
+    </section>
+
+    <section id="messages" class="messages"></section>
+  </main>
+  <script src="streamer.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clopePlay — Mensagens da Live</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <div class="brand"><span class="logo">CP</span><span>clopePlay</span></div>
+      <div class="badge">● LIVE</div>
+    </section>
+
+    <section class="card">
+      <div class="icon">💬</div>
+      <h1>Envie uma mensagem para a live</h1>
+      <p class="subtitle">Sua mensagem pode aparecer na tela e ser lida em voz alta pelo streamer.</p>
+
+      <form id="messageForm">
+        <label for="message">Sua mensagem</label>
+        <textarea id="message" maxlength="250" placeholder="Escreva sua mensagem..." required></textarea>
+        <div class="counter"><span id="count">0</span>/250</div>
+        <button type="submit">Enviar mensagem <span>➜</span></button>
+      </form>
+
+      <p id="status" class="status" aria-live="polite"></p>
+    </section>
+
+    <footer>clopePlay • mensagens para sua live</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
